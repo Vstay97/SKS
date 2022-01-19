@@ -1,0 +1,81 @@
+[INFO] (utils) Arguments:
+[INFO] (utils)   batch_size: 512
+[INFO] (utils)   command: train.py -d ../data/SemEval_task5/df_train.csv --trial ../data/SemEval_task5/df_test.csv -s ../data/sentiment_datasets/train_E6oV3lV.csv --word_list ../data/word_list/word_all.txt --emb ../glove.6B.300d.txt -o output_dir -b 512 --epochs 15 --lr 0.002 --maxlen 50 -t HHMM_transformer
+[INFO] (utils)   data_path: ../data/SemEval_task5/df_train.csv
+[INFO] (utils)   dropout_prob: 0.1
+[INFO] (utils)   emb_dim: 300
+[INFO] (utils)   emb_path: ../glove.6B.300d.txt
+[INFO] (utils)   epochs: 15
+[INFO] (utils)   humor_data_path: None
+[INFO] (utils)   learn_rate: 0.002
+[INFO] (utils)   loss: ce
+[INFO] (utils)   maxlen: 50
+[INFO] (utils)   model_type: HHMM_transformer
+[INFO] (utils)   non_gate: False
+[INFO] (utils)   out_dir_path: output_dir
+[INFO] (utils)   sarcasm_data_path: None
+[INFO] (utils)   sentiment_data_path: ../data/sentiment_datasets/train_E6oV3lV.csv
+[INFO] (utils)   trial_data_path: ../data/SemEval_task5/df_test.csv
+[INFO] (utils)   vocab_path: None
+[INFO] (utils)   word_list_path: ../data/word_list/word_all.txt
+[INFO] (utils)   word_norm: 1
+[INFO] (data_reader) Creating vocabulary.........
+[INFO] (data_reader)   528090 total words, 43282 unique words
+[INFO] (data_reader)   Vocab size: 43282
+[INFO] (data_reader) <unk> hit rate: 0.00%
+[INFO] (data_reader) <unk> hit rate: 0.01%
+[INFO] (__main__) Statistics:
+[INFO] (__main__)   train_x shape: (35415, 50)
+[INFO] (__main__)   test_x shape:  (1320, 50)
+[INFO] (__main__)   train_chars shape: (35415, 300)
+[INFO] (__main__)   test_chars shape:  (1320, 300)
+[INFO] (__main__)   train_y shape: (35415, 2)
+[INFO] (__main__)   test_y shape:  (1320, 2)
+[INFO] (models) Building a HHMM_transfermer
+[WARNING] (tensorflow) AutoGraph could not transform <bound method HSMMBottom.call of <my_layers.HSMMBottom object at 0x0000019A05F31160>> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: Bad argument number for Name: 3, expecting 4
+[WARNING] (tensorflow) AutoGraph could not transform <bound method ExpertModule_trm.call of <my_layers.ExpertModule_trm object at 0x0000019A05B3FD30>> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: module 'gast' has no attribute 'Num'
+[WARNING] (tensorflow) AutoGraph could not transform <bound method MultiHeadAttention.call of <my_layers.MultiHeadAttention object at 0x0000019A05B3B048>> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: module 'gast' has no attribute 'Num'
+[WARNING] (tensorflow) AutoGraph could not transform <bound method ExpertModule_trm.call of <my_layers.ExpertModule_trm object at 0x0000019A05B3BFD0>> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: module 'gast' has no attribute 'Num'
+[WARNING] (tensorflow) AutoGraph could not transform <bound method MultiHeadAttention.call of <my_layers.MultiHeadAttention object at 0x0000019A0651C320>> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: module 'gast' has no attribute 'Num'
+[WARNING] (tensorflow) AutoGraph could not transform <bound method ExpertModule_trm.call of <my_layers.ExpertModule_trm object at 0x0000019A06504278>> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: module 'gast' has no attribute 'Num'
+[WARNING] (tensorflow) AutoGraph could not transform <bound method MultiHeadAttention.call of <my_layers.MultiHeadAttention object at 0x0000019A06504588>> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: module 'gast' has no attribute 'Num'
+[WARNING] (tensorflow) AutoGraph could not transform <bound method GateModule.call of <my_layers.GateModule object at 0x0000019A060A34E0>> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: module 'gast' has no attribute 'Num'
+[WARNING] (tensorflow) AutoGraph could not transform <bound method MultiHeadAttention.call of <my_layers.MultiHeadAttention object at 0x0000019A060A37F0>> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: module 'gast' has no attribute 'Num'
+[WARNING] (tensorflow) AutoGraph could not transform <bound method GateModule.call of <my_layers.GateModule object at 0x0000019A06086940>> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: module 'gast' has no attribute 'Num'
+[WARNING] (tensorflow) AutoGraph could not transform <bound method MultiHeadAttention.call of <my_layers.MultiHeadAttention object at 0x0000019A06086C50>> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: module 'gast' has no attribute 'Num'
+[WARNING] (tensorflow) AutoGraph could not transform <bound method HSMMTower.call of <my_layers.HSMMTower object at 0x0000019A05B3FC88>> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: Bad argument number for Name: 3, expecting 4
+[WARNING] (tensorflow) AutoGraph could not transform <bound method HSMMTower.call of <my_layers.HSMMTower object at 0x0000019A05B3F7B8>> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: Bad argument number for Name: 3, expecting 4
+[INFO] (models)   Done
+[INFO] (models) Initializing lookup table
+[INFO] (w2vEmbReader) Loading embeddings from: ../glove.6B.300d.txt
+[INFO] (w2vEmbReader)   #vectors: 400000, #dimensions: 300
+[INFO] (w2vEmbReader) 21020/43282 word vectors initialized (hit rate: 48.57%)
+[INFO] (models)   Done
+[INFO] (__main__) --------------------------------------------------------------------------------------------------------------------------
+[INFO] (__main__) Initial Evaluation:
